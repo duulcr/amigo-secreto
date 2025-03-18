@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Amigo Secreto</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amigo Secreto</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Vinculación con el archivo CSS -->
 </head>
 <body>
-    <h1>¡Bienvenidos al juego del Amigo Secreto!</h1>
-    <input type="text" id="nombre" placeholder="Escribe el nombre de tu amigo">
+  <div class="container">
+    <h1>¡Amigo Secreto!</h1>
+    
+    <!-- Campo de texto para ingresar nombres -->
+    <input type="text" id="inputName" placeholder="Nombre del amigo">
     <button id="addButton">Adicionar</button>
-    <ul id="amigosList"></ul>
+
+    <!-- Lista para mostrar los amigos -->
+    <ul id="friendsList"></ul>
+
+    <!-- Botón para realizar el sorteo -->
     <button id="sortButton">Sortear Amigo</button>
-    <p id="resultado"></p>
-    <script src="script.js"></script>
+
+    <!-- Resultado del sorteo -->
+    <div id="result"></div>
+  </div>
+
+  <!-- Vinculación con el archivo JavaScript -->
+  <script src="script.js"></script>
 </body>
 </html>
